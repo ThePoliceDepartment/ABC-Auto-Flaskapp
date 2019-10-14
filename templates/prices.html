@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+            <div class ="col-xm-4"></div>
+            <div class ="col-xm-4">
+              <div class ="header_logo_container">
+                  <a href="{{ url_for('home')}}" class="header_logo"><img src="{{url_for('static', filename='images/abcauto.png')}}" style="max-width: 155px;"></img></a>
+
+              </div>
+            </div>
+            <div class ="col-xm-4">
+              <div itemscope= "itemscope">
+                <a href="#" title="Visit page" class="#">Book an appointment</a>
+                <span class ="header-phone-text">or call us</span>
+                <a href="9163124321"><strong>(916) 654-3210</strong></a>
+                <div>
+                    <ul style="text-align: center;">
+                      <li>
+                          <a itemprop="sameAs" target="_blank" href="https://www.facebook.com" title="Visit us on Facebook" rel="nofollow" class="link-facebook"><i class="fa fa-facebook-square" style="font-size:30px; color: black;"></i></a>
+                      </li>
+                      <li>
+                          <a itemprop="sameAs" target="_blank" href="https://www.google.com" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
+                      </li>
+                      <li>
+                          <a itemprop="sameAs" target="_blank" href="https://twitter.com" title="Visit us on Twitter" rel="nofollow" class="link-twitter"><i class="fa fa-twitter" style="font-size:30px; color: black;"></i></a>
+                      </li>
+                      <li>
+                          <a itemprop="sameAs" target="_blank" href="https://www.yelp.com" title="Visit us on Yelp" rel="nofollow" class="link-yelp"><i class="fa fa-yelp" style="font-size:30px; color: black;"></i></a>
+                      </li>
+                      <li>
+                          <a itemprop="sameAs" target="_blank" href="https://www.instagram.com" title="Visit us on Instagram" rel="nofollow" class="link-instagram"><i class="fa fa-instagram" style="font-size:30px; color: black;"></i></a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+    </nav>
+    <div>
+        <ul class="nav justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('home')}}"><i class="fa fa-fw fa-home"></i> Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('carLookup')}}"> Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('prices')}}"><i class="fa fa-dollar"></i>Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login')}}"> <i class="fa fa-fw fa-user"></i>Login</a>
+          </li>
+        </ul>
+    </div>
+ </header>
+<!-------------------------------------------------------------------------------------------------------------------->
+        <h2>Prices</h2>
+        <p>
+			<dl style="text-align: center;">
+				<dt>Engine work</dt><dd>$100</dd>
+				<dt>Tire work</dt><dd>$50</dd>
+				<dt>Electrical work</dt><dd>$200</dd>
+				<dt>Brake replacements</dt><dd>$120</dd>
+				<dt>Oil Change</dt><dd>$45</dd>
+				<dt>Full Inspection</dt><dd>$155</dd>
+				<dt>Rotate Tires</dt><dd>$40</dd>
+				<dt>Deep Clean</dt><dd>$80</dd>
+			</dl>
+        </p>
+		</div>
+</body>

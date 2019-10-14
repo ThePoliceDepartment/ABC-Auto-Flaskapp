@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                <div class ="col-xm-4"></div>
+                <div class ="col-xm-4">
+                  <div class ="header_logo_container">
+                      <a href="{{ url_for('home')}}" class="header_logo"><img src="{{url_for('static', filename='images/abcauto.png')}}" style="max-width: 155px;"></img></a>
+    
+                  </div>
+                </div>
+                <div class ="col-xm-4">
+                  <div itemscope= "itemscope">
+                    <a href="#" title="Visit page" class="#">Book an appointment</a>
+                    <span class ="header-phone-text">or call us</span>
+                    <a href="9163124321"><strong>(916) 654-3210</strong></a>
+                    <div>
+                        <ul style="text-align: center;">
+                          <li>
+                              <a itemprop="sameAs" target="_blank" href="https://www.facebook.com" title="Visit us on Facebook" rel="nofollow" class="link-facebook"><i class="fa fa-facebook-square" style="font-size:30px; color: black;"></i></a>
+                          </li>
+                          <li>
+                              <a itemprop="sameAs" target="_blank" href="https://www.google.com" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
+                          </li>
+                          <li>
+                              <a itemprop="sameAs" target="_blank" href="https://twitter.com" title="Visit us on Twitter" rel="nofollow" class="link-twitter"><i class="fa fa-twitter" style="font-size:30px; color: black;"></i></a>
+                          </li>
+                          <li>
+                              <a itemprop="sameAs" target="_blank" href="https://www.yelp.com" title="Visit us on Yelp" rel="nofollow" class="link-yelp"><i class="fa fa-yelp" style="font-size:30px; color: black;"></i></a>
+                          </li>
+                          <li>
+                              <a itemprop="sameAs" target="_blank" href="https://www.instagram.com" title="Visit us on Instagram" rel="nofollow" class="link-instagram"><i class="fa fa-instagram" style="font-size:30px; color: black;"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+        </nav>
+        <div>
+            <ul class="nav justify-content-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('home')}}"><i class="fa fa-fw fa-home"></i>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('carLookup') }}">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('prices') }}"><i class="fa fa-dollar"></i>Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('login') }}"> <i class="fa fa-fw fa-user"></i>Login</a>
+              </li>
+            </ul>
+        </div>
+     </header>
+<!-------------------------------------------------------------------------------------------------------------------->
+     <h2>
+      <div class="container">
+       <div class="row">
+          <div class="col-lg-6">
+            <div class="about">
+                <div class="lg-sq">
+                  <div class="WelcomeText">
+                    <div class="WelcomeSub"> About </div>
+                    <div>
+                      <h2>ABC Auto Sales</h2>
+                      <p>ABC Auto Sales is a family owned and operated dealership, serving Stockton, 
+                         California for the last few years. Over 30 vehicles to choose from - we have cars, trucks, vans, suvs, 
+                         and more! We have financing programs for virtually everyone regardless of credit history.
+                         Call now (209) 465-3791 Or stop by for a test drive!</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+       </div>
+     </div>
+    </h2>
+
+<!-----------------------------------------------------FOOTER----------------------------------------------------------->    
+<footer class="page-footer">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+            repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+            harum esse fugiat. Itaque, culpa?</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+            commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+            excepturi hic.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+
+    <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fa fa-facebook-square"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fa fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fa-google"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fa-instagram"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+  </footer>
+    <!-- Footer Text -->
+</body>

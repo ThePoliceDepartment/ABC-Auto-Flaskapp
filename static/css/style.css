@@ -1,0 +1,88 @@
+body{
+    background: white;
+} 
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    padding-top:5px; 
+    color:#3E4B4D;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    font-size: 25px;
+}
+
+.container{
+    margin-right: auto;
+    margin-left:  auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: 1416px;
+    width: 1392px;
+}
+
+.row{
+    background: transparent;
+    font-size: 100%;
+    font-family: Arial,Sans-Serif;
+    line-height: 1.4em;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+nav li{
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px 0 0;
+}
+.header_logo_container{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    z-index: 999;
+}
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.header_logo{
+    display: inline-block;
+    max-width: 100%;
+    text-align: center
+}
+.header-phone-text {
+    color: #999;
+    font: 400 1em/1.4 'Glacial Regular',Verdana,sans-serif;
+    padding: 0 15px;
+}
+
+.col-xm-4{
+    width: 33.333%;
+}
+.social{
+    display: inline-block;
+}
+
+.page-footer{
+    padding: 40px 0px;
+    background-color: teal;
+    color: #bbb;
+}
+
+.card{
+    width: 35%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
