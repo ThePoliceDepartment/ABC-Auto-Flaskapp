@@ -25,7 +25,7 @@ https://www.postgresql.org/
 
 *db connection is based on your postgres info
 
-'postgresql://(username):(password)@(host)/(nameOfDatabase)'
+'postgresql://(username):(password)@(host:port)/(nameOfDatabase)'
 
 install psycopg2 in run db commands:
 pip install psycopg2
