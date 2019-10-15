@@ -27,6 +27,9 @@ https://www.postgresql.org/
 
 'postgresql://(username):(password)@(host)/(nameOfDatabase)'
 
+install psycopg2 in run db commands:
+pip install psycopg2
+
 Create database by:
 on cmd run python shell by typing 'python'
 then import the db to the server api by typing 'from server import db'
