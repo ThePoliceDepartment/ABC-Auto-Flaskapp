@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="{{ url_for('static', filename='js/carLookup.js')}}"></script>
+<!--   
+   <script src="{{ url_for('static', filename='js/carShowAll.js')}}"></script>
+   -->
+   <script src="{{ url_for('static', filename='js/carShowAll.js')}}"></script>
 </style>
-	
 	
 </head>
 <body>
@@ -71,19 +73,15 @@
     </div>
  </header>
 <!-------------------------------------------------------------------------------------------------------------------->
-<h2>Available Cars</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<h2>Available Cars
+    <div>
+        <input type="text" style="width: 500px" id="exampleCarInfo" placeholder="Year Make Model">
+	    <button type="submit" id="carSearchBtn" class="btn btn-primary">Search</button>
+    </div>
+</h2>
 
-<table id="myTable">
-  <tr class="header">
-    <th style="width:20%;">Year</th>
-    <th style="width:40%;">Make</th>
-    <th style="width:40%;">Model</th>
-  </tr>
-
-  
-</table>
+<center><p class="results"></p></center>
   
 </body>
 </html>

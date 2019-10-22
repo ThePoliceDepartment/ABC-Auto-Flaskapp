@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 #-----------------database--------------
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:*******@localhost/ABCAutoShop'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/ABCAutoShop'
 db = SQLAlchemy(app)
 
 class User(db.Model):
@@ -28,12 +28,13 @@ class Vehicle(db.Model):
     year = db.Column(db.String(4), unique=False)
     make = db.Column(db.String(120), unique=False)
     model = db.Column(db.String(120), unique=False)
-
-    def __init__(self, year, make, model):
+    quantity = db.Column(db.Integer, unique=False)
+    
+    def __init__(self, year, make, model, quantity):
         self.year = year
         self.make = make
         self.model = model
-
+        self.quantity = quantity
 
 
 #----------------Mapping-----------------
@@ -81,7 +82,7 @@ def getCars():
     x = 0
     while x < len(arrayVehicles):
         
-        data[x]= { 'year':arrayVehicles[x].year, 'make':arrayVehicles[x].make, 'model':arrayVehicles[x].model }
+        data[x]= { 'year':arrayVehicles[x].year, 'make':arrayVehicles[x].make, 'model':arrayVehicles[x].model, 'quantity':arrayVehicles[x].quantity }
         x += 1
 
     data = json.dumps(data)
