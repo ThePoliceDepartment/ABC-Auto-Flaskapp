@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 #-----------------database--------------
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/ABCAutoShop'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:tpd2019@localhost:5432/ABCAutoShop'
 db = SQLAlchemy(app)
 
 class User(db.Model):
