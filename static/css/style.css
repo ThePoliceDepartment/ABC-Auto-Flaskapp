@@ -96,7 +96,7 @@ nav li{
 }
 
 .height-max{
-    min-height: calc(100vh - 76px);
+    min-height: calc(50vh - 76px);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
