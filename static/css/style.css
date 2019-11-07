@@ -93,10 +93,11 @@ nav li{
     clip-path: polygon(0 0,100% 0, 95%, 50% 100%, 0 95%);
     color: white;
     overflow: hidden;
+    text-align: center;
 }
 
 .height-max{
-    min-height: calc(50vh - 76px);
+    min-height: calc(50vh - 25px);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -105,6 +106,7 @@ nav li{
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: infinite;
+    text-align:center;
 }
 
 @-webkit-keyframes zoom{
