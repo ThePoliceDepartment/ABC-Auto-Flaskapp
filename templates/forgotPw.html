@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"/>
 </head>
 <body>
     <header>
@@ -23,14 +23,14 @@
                   <div itemscope= "itemscope">
                     <a href="#" title="Visit page" class="#">Book an appointment</a>
                     <span class ="header-phone-text">or call us</span>
-                    <a href="9163124321"><strong>(916) 654-3210</strong></a>
+                    <a href="tel:+1-209-463-3226"><strong>(209) 463-3226</strong></a>
                     <div>
                         <ul style="text-align: center">
                           <li>
                               <a itemprop="sameAs" target="_blank" href="https://www.facebook.com" title="Visit us on Facebook" rel="nofollow" class="link-facebook"><i class="fa fa-facebook-square" style="font-size:30px; color: black;"></i></a>
                           </li>
                           <li>
-                              <a itemprop="sameAs" target="_blank" href="https://www.google.com" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
+                              <a itemprop="sameAs" target="_blank" href="https://www.google.com/search?client=safari&source=hp&ei=UUDEXePsD4nL-gS2hajIDg&q=abc+auto+sales+stockton+ca&oq=abc+auto+sales+sto&gs_l=psy-ab.1.0.0j0i22i30.1058.4708..6024...0.0..0.262.1228.17j0j1......0....1..gws-wiz.......0i10j0i131.sMd0KEIXQeQ" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
                           </li>
                           <li>
                               <a itemprop="sameAs" target="_blank" href="https://twitter.com" title="Visit us on Twitter" rel="nofollow" class="link-twitter"><i class="fa fa-twitter" style="font-size:30px; color: black;"></i></a>
@@ -50,16 +50,16 @@
         <div>
             <ul class="nav justify-content-center">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="carLookup.html">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="prices.html"><i class="fa fa-dollar"></i>Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html"> <i class="fa fa-fw fa-user"></i>Login</a>
+                <a class="nav-link" href="{{ url_for('home')}}"><i class="fa fa-fw fa-home"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('carLookup') }}">Inventory</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('prices') }}"><i class="fa fa-dollar"></i>Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('login') }}"> <i class="fa fa-fw fa-user"></i>Login</a>
               </li>
             </ul>
         </div>
