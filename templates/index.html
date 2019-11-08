@@ -30,7 +30,7 @@
                               <a itemprop="sameAs" target="_blank" href="https://www.facebook.com" title="Visit us on Facebook" rel="nofollow" class="link-facebook"><i class="fa fa-facebook-square" style="font-size:30px; color: black;"></i></a>
                           </li>
                           <li>
-                              <a itemprop="sameAs" target="_blank" href="https://www.google.com" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
+                              <a itemprop="sameAs" target="_blank" href="https://www.google.com/search?client=safari&source=hp&ei=UUDEXePsD4nL-gS2hajIDg&q=abc+auto+sales+stockton+ca&oq=abc+auto+sales+sto&gs_l=psy-ab.1.0.0j0i22i30.1058.4708..6024...0.0..0.262.1228.17j0j1......0....1..gws-wiz.......0i10j0i131.sMd0KEIXQeQ" title="Visit us on Google" rel="nofollow" class="link-googleplus"><i class="fa fa-google" style="font-size:30px; color: black;"></i></a>
                           </li>
                           <li>
                               <a itemprop="sameAs" target="_blank" href="https://twitter.com" title="Visit us on Twitter" rel="nofollow" class="link-twitter"><i class="fa fa-twitter" style="font-size:30px; color: black;"></i></a>
@@ -78,27 +78,17 @@
 
 <!-------about section----------------------------------------------------------------------------->
      <h2>
-      <div class="container">
-       <div class="row">
-          <div class="col-lg-10">
-            <div class="about">
-                <div class="lg-sq">
-                  <div class="WelcomeText">
-                    <div class="WelcomeSub font-weight:bold"> ABOUT </div>
-                    <div>
-                      <h2>ABC Auto Sales</h2>
-                      <div style="text-align: center justify"><p>We are a family owned and operated dealership, serving Stockton,
+         <div class="WelcomeText">
+             <div class="WelcomeSub font-weight:bold" style="text-align:center"> ABOUT ABC Auto Sales</div>
+                <div><p>We are a family owned and operated dealership, serving Stockton,
                          California for the last few years.<br> Over 30 vehicles to choose from - we have cars, trucks, vans, suvs,
                          and more! <br>We have financing programs for virtually everyone regardless of credit history.
                          <div style="text-align: center"><p>Call now Or stop by for a test drive!</p>
-                      </p></div></div>
+                      </p></div>
                     </div>
                   </div>
                 </div>
             </div>
-          </div>
-       </div>
-     </div>
     </h2>
      
      
@@ -106,82 +96,79 @@
      <section class="inventory py-5" id="inventory">
          <div class="container">
              <div class="row mb-5">
-                 <div class"inventory"></div>
                  <div class="col d-flex flex-wrap text-uppercase justify-content-center">
                      <h1 class="font-weight-bold align-self-center mx-1">our </h1>
                      <h1 class="section-title--special mx-1"> featured pre-owned inventory</h1>
                  </div>
              </div>
          </div>
+         <div class="row inventory-container"></div>
          <!------first car----->
-         <div class="row inventory-container">
-             <div class="col-10 mx-auto my-5 col-md-9 col-lg-9">
-                 <div class="card car-card">
-                     <a class="nav-link" href="{{ url_for('carLookup') }}">
+         
+             <div class="card car-card">
+                 <a class="nav-link" href="{{ url_for('carLookup') }}">
                      <img src="{{url_for('static', filename='images/car-american-1.jpeg')}}" class="card-img-top car-img" alt=""/></img>
                      <div class="card-body">
                          <div class="car-info d-flex justify-content-between">
                              <div class="car-text text-uppercase">
-                                 <h6 class="font-weight-bold">ford</h6>
-                                 <h6>model: mustang</h6>
+                                 <h6 class="font-weight-bold">ford
+                                     <br>model: mustang</h6>
                              </div>
-                             <h5 class="car-value align-self-center py-2 px-4">$5,000
-                             </h5>
+                             <h5 class="car-value align-self-center py-2 px-3">$<span>5,000</span></h5>
                          </div>
                      </div>
                      <div class="card-footer text-capitalize d-flex justify-content-between">
-                         <p>coupe<br>
-                          automatic<br>
-                          mileage: 130,0000</p>
+                         <p><i class="fa fa-car"></i> coupe<br>
+                         <span><i class="fa fa-cogs"></i></span> automatic<br>
+                         <span><i class="fa fa-tachometer"></i></span> mileage: 130,0000</p>
+                     </div>
                  </div></a>
              </div>
-         </div>
+        
+             
          <!----second car--->
-         <div class="col-10 mx-auto my-5 col-md-9 col-lg-9">
+         
          <div class="card car-card">
              <a class="nav-link" href="{{ url_for('carLookup') }}">
-             <img src="{{url_for('static', filename='images/car-american-5.jpeg')}}" class="card-img-top car-img" alt=""/></img>
-             <div class="card-body">
-                 <div class="car-info d-flex justify-content-between">
-                     <div class="car-text text-uppercase">
-                         <h6 class="font-weight-bold">chevrolet</h6>
-                         <h6>model: corvette</h6>
+                 <img src="{{url_for('static', filename='images/car-american-5.jpeg')}}" class="card-img-top car-img" alt=""/></img>
+                 <div class="card-body">
+                     <div class="car-info d-flex justify-content-between">
+                         <div class="car-text text-uppercase">
+                             <h6 class="font-weight-bold">chevrolet
+                             <br>model: corvette</h6>
+                         </div>
+                         <h5 class="car-value align-self-center py-2 px-3">$<span>12,000</span></h5>
                      </div>
-                     <h5 class="car-value align-self-center py-2 px-4">$12,000</span>
-                     </h5>
                  </div>
-             </div>
-             <div class="card-footer text-capitalize d-flex justify-content-between">
-                 <p>coupe<br>
-                 automatic<br>
-                 mileage: 120,0000</p>
-             </div>
-             </div>
-         </a>
+                 <div class="card-footer text-capitalize d-flex justify-content-between">
+                     <p><i class="fa fa-car"></i> coupe<br>
+                     <span><i class="fa fa-cogs"></i></span> manual<br>
+                     <span><i class="fa fa-tachometer"></i></span> mileage: 120,0000</p>
+                 </div>
+         </div></a>
          </div>
+         
                  
          <!----third car--->
-         <div class="col-10 mx-auto my-5 col-md-9 col-lg-9">
+        
          <div class="card car-card">
              <a class="nav-link" href="{{ url_for('carLookup') }}">
-             <img src="{{url_for('static', filename='images/car-german-1.jpeg')}}" class="card-img-top car-img" alt=""/></img>
-             <div class="card-body">
-                 <div class="car-info d-flex justify-content-between">
-                     <div class="car-text text-uppercase">
-                         <h6 class="font-weight-bold">mercedes-benz</h6>
-                         <h6>model: amg</h6>
+                 <img src="{{url_for('static', filename='images/car-german-1.jpeg')}}" class="card-img-top car-img" alt=""/></img>
+                 <div class="card-body">
+                     <div class="car-info d-flex justify-content-between">
+                         <div class="car-text text-uppercase">
+                             <h6 class="font-weight-bold">mercedes-benz
+                                 <br>model: amg</h6>
+                         </div>
+                         <h5 class="car-value align-self-center py-2 px-3">$<span>30,000</span></h5>
                      </div>
-                     <h5 class="car-value align-self-center py-2 px-4">$30,000</span>
-                     </h5>
                  </div>
-             </div>
-             <div class="card-footer text-capitalize d-flex justify-content-between">
-                 <p>coupe<br>
-                 automatic<br>
-                 mileage: 190,0000</p>
-             </div>
-             </div>
-         </a>
+                 <div class="card-footer text-capitalize d-flex justify-content-between">
+                     <p><i class="fa fa-car"></i> coupe<br>
+                     <span><i class="fa fa-cogs"></i></span> automatic<br>
+                     <span><i class="fa fa-tachometer"></i></span> mileage: 190,0000</p>
+                 </div>
+         </div></a>
          </div>
 
      </section>

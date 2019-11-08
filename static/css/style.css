@@ -1,7 +1,7 @@
 body{
     background: white;
     color: black;
-} 
+}
 h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -90,37 +90,36 @@ nav li{
 }
 
 .header{
-    clip-path: polygon(0 0,100% 0, 95%, 50% 100%, 0 95%);
+    clip-path: polygon(0 0,100% 0, 100% 95%,50% 100%,0 95%);
     color: white;
     overflow: hidden;
-    text-align: center;
 }
 
 .height-max{
-    min-height: calc(50vh - 25px);
-    background-position: center;
+    min-height: calc(25vh - 10px);
+    background-position: -webkit-center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-animation-name: zoom;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
-    text-align:center;
-}
-
-@-webkit-keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2) translateX(-5%)
-    }
-    100%{
-        transform: scale(1)
-    }
     
 }
+
+@-webkit-keyframes zoom {
+    0%{
+        -webkit-transform: scale(1);
+    }
+    50%{
+        -webkit-transform: scale(1.2) translateX(-5%);
+    }
+    100%{
+        -webkit-transform: scale(1);
+    }
+}
+
 
 .inventory{
     background: #d8eeee;
@@ -138,11 +137,17 @@ nav li{
 
 .car-value{
     background: #add8e6
-    color: black;
-    clip-path: polygon(15% 0, 85%, 0, 100% 100%, 0 100%);
+    color: white;
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
     -webkit-transition: all 1s linear;
 }
 
-.car-value: hover{
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+.car-value:hover{
+    clip-path: polygon(0% 0,100% 0,100% 100%,0 100%);
 }
+
+footer {
+    padding:5em 0;
+}
+
+
